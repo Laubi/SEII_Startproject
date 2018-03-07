@@ -25,7 +25,7 @@ public class MainActivity extends Activity {
         this.btnSubmit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                checkPalindrom();
+                checkPalindrome();
             }
         });
     }
@@ -34,15 +34,17 @@ public class MainActivity extends Activity {
         return str.equals(new StringBuilder(str).reverse().toString());
     }
 
-    private void checkPalindrom() {
+    private void checkPalindrome() {
         String input = this.textInput.getText().toString();
 
-        if(input.length() < 5) {
+        if(input.length() == 0) {
+            setMessage("You have to input data");
+        } else if(input.length() < 5) {
             setMessage("Input is to short");
-        }else {
+        } else {
             if(isPalindrome(input)) {
                 setMessage("Yes, the input is a palindrom");
-            }else {
+            } else {
                 setMessage("No, the input is not a palindrom");
             }
         }
