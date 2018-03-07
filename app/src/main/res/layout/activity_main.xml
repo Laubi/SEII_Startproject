@@ -6,5 +6,68 @@
     android:layout_height="match_parent"
     tools:context="at.laubi.palindromchecker.MainActivity">
 
-    
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="178dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Palindrom?"
+            android:textSize="24sp"
+            tools:layout_editor_absoluteX="163dp"
+            tools:layout_editor_absoluteY="70dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="431dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:layout_weight="1"
+                android:text="Eingabe String"
+                tools:layout_editor_absoluteX="33dp"
+                tools:layout_editor_absoluteY="416dp" />
+
+            <EditText
+                android:id="@+id/tvText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                tools:layout_editor_absoluteX="153dp"
+                tools:layout_editor_absoluteY="385dp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnCheckString"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Check String"
+            tools:layout_editor_absoluteX="148dp"
+            tools:layout_editor_absoluteY="194dp" />
+
+        <TextView
+            android:id="@+id/tvMessages"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Messages will be displayed here"
+            tools:layout_editor_absoluteX="163dp"
+            tools:layout_editor_absoluteY="291dp" />
+
+    </LinearLayout>
+
 </android.support.constraint.ConstraintLayout>
