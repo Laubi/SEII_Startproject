@@ -31,6 +31,8 @@ public class MainActivity extends Activity {
     }
 
     public static boolean isPalindrome(String str)	{
+        str = str.toLowerCase();
+
         return str.equals(new StringBuilder(str).reverse().toString());
     }
 
